@@ -85,7 +85,6 @@ def knobs_callback(path, args):
 def keys_callback(path, args) :
     global etc
     k, v = args
-    print str(args)
     if (k == 2 and v > 0) : etc.next_mode()
     if (k == 1 and v > 0) : etc.prev_mode()
     if (k == 9) : etc.update_trig_button(v)
