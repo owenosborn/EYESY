@@ -68,8 +68,9 @@ midi.init(etc)
 # init fb and main surfaces
 print "opening frame buffer..."
 os.environ['SDL_VIDEODRIVER'] = 'fbcon'
-hwscreen = pygame.display.set_mode((etc.xres,etc.yres),   pygame.DOUBLEBUF, 32)
-#hwscreen = pygame.display.set_mode((1920,1080),  pygame.FULLSCREEN | pygame.DOUBLEBUF, 32)
+#hwscreen = pygame.display.set_mode((etc.xres,etc.yres),   pygame.DOUBLEBUF, 32)
+#hwscreen = pygame.display.set_mode((etc.xres,etc.yres),  pygame.FULLSCREEN | pygame.DOUBLEBUF, 32)
+hwscreen = pygame.display.set_mode((etc.xres,etc.yres),  pygame.FULLSCREEN, 32)
 screen = pygame.Surface(hwscreen.get_size())
 screen.fill((0,0,0)) 
 hwscreen.blit(screen, (0,0))

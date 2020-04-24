@@ -86,13 +86,13 @@ def keys_callback(path, args) :
     global etc
     k, v = args
     if (k == 2 and v > 0) : etc.next_mode()
-    if (k == 1 and v > 0) : etc.prev_mode()
-    if (k == 9) : etc.update_trig_button(v)
-    if (k == 7 and v > 0) : etc.screengrab_flag = True
-    if (k == 4 and v > 0) : etc.prev_scene()
-    if (k == 6) : etc.save_or_delete_scene(v)
-    if (k == 5 and v > 0) : etc.next_scene()
-    if (k == 3 and v > 0) : 
+    if (k == 4 and v > 0) : etc.prev_mode()
+    if (k == 7) : etc.update_trig_button(v)
+    if (k == 5 and v > 0) : etc.screengrab_flag = True
+    if (k == 6 and v > 0) : etc.prev_scene()
+    if (k == 3) : etc.save_or_delete_scene(v)
+    if (k == 1 and v > 0) : etc.next_scene()
+    if (k == 0 and v > 0) : 
         if (etc.osd) : etc.set_osd(False)
         else : etc.set_osd(True)
     if (k == 8 and v > 0) : 
